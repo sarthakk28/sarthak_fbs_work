@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Registration Form</title>
+ <style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(to right, #dfddda, #e369bb); /* optional */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.loginform {
+    background: url('https://tse2.mm.bing.net/th/id/OIP.qt6Bf3ViW3M1IMYt2O5T4gHaE8?rs=1&pid=ImgDetMain&o=7&rm=3') no-repeat center center;
+    background-size: cover;
+    width: 300px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.loginform::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    z-index: 0;
+}
+
+.loginform * {
+    position: relative;
+    z-index: 1;
+}
+
+.loginform input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.loginform input:focus {
+    outline: none;
+}
+
+.loginform button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #84e811;
+    border: none;
+
+ </style>
+
+
+</head>
+<body >
+    <div class="loginform">
+    <h1>Registration Form</h1>
+    <b>Full Name :</b>
+    <input type="text" placeholder="Enter your Full Name"><br><br>
+    <b>Email : </b>
+    <input type="email" placeholder="example@gmail.com"><br><br>
+    <b>Password : </b>
+    <input type="password" minlength="8" placeholder="Enter password" required><br><br>
+    <b>Age: </b>
+    <input type="number" placeholder=""><br><br>
+    <b>Date of Birth: </b>
+    <input type="datr" name="dob" placeholder="dd-mm-yyyy"><br><br>
+
+    <lable>
+        <input type="checkbox" name="subscribe" checked >
+        Subscribe to newsleter
+    </lable><br><br>
+
+
+        <b>Gender: </b><br>
+        <input type="radio" name="gender">
+        male<br>
+        <input type="radio" name="gender">
+        female<br>
+
+        <b>Upload Resume:</b>
+        <input type="file"  accept="pdf,doc,docx"><br><br>
+
+        <b>Phone:</b>
+        <input type="number" name="number" placeholder="1234567890"><br><br>
+
+        <b>Satisfaction: </b>
+        <input type="range" min="1" max="10"><br><br>
+
+        <b>Search: </b>
+        <input type="search" placeholder="Search Somthing..."><br><br>
+
+        <input type="submit" name="Register">
+        <input type="reset" name="reset">
+        </div>
+</html>
