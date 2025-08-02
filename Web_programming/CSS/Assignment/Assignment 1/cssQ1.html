@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Registration Form</title>
+ <style>
+
+
+body {
+      font-family: Arial, sans-serif;
+      background-color: #fffffc;
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+    }
+    .loginform {
+    background: url('https://tse2.mm.bing.net/th/id/OIP.qt6Bf3ViW3M1IMYt2O5T4gHaE8?rs=1&pid=ImgDetMain&o=7&rm=3') no-repeat center center;
+    background-size: cover;
+    width: 300px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgb(255, 250, 250);
+    text-align: center;
+    color: #4f513f;
+    position: relative;
+    overflow: hidden;
+}
+
+    form {
+      background: rgb(185, 223, 211);
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgb(116, 105, 25);
+      width: 400px;
+    }
+
+    h1 {
+      text-align: center;
+      border-bottom: 2px solid #f11111;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    input[type="number"],
+    input[type="email"],
+    input[type="password"],
+    input[type="file"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #a5781c;
+      border-radius: 4px;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+      margin-right: 5px;
+    }
+
+    .gender-options,
+    .subject-options {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    input[type="submit"] {
+      width: 100%;
+      background-color: green;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    input[type="submit"]:hover {
+      background-color: darkgreen;
+    }
+ </style>
+
+
+</head>
+<body >
+    <div class="loginform">
+    <h1>Registration Form</h1>
+    <b>Full Name :</b>
+    <input type="text" placeholder="Enter your Full Name"><br><br>
+    <b>Email : </b>
+    <input type="email" placeholder="example@gmail.com"><br><br>
+    <b>Password : </b>
+    <input type="password" minlength="8" placeholder="Enter password" required><br><br>
+    <b>Age: </b>
+    <input type="number" placeholder=""><br><br>
+    <b>Date of Birth: </b>
+    <input type="datr" name="dob" placeholder="dd-mm-yyyy"><br><br>
+
+    <lable>
+        <input type="checkbox" name="subscribe" checked >
+        Subscribe to newsleter
+    </lable><br><br>
+
+
+        <b>Gender: </b><br>
+        <input type="radio" name="gender">
+        male<br>
+        <input type="radio" name="gender">
+        female<br>
+
+        <b>Upload Resume:</b>
+        <input type="file"  accept="pdf,doc,docx"><br><br>
+
+        <b>Phone:</b>
+        <input type="number" name="number" placeholder="1234567890"><br><br>
+
+        <b>Satisfaction: </b>
+        <input type="range" min="1" max="10"><br><br>
+
+        <b>Search: </b>
+        <input type="search" placeholder="Search Somthing..."><br><br>
+
+        <input type="submit" name="Register">
+    
+        </div>
+</html>
